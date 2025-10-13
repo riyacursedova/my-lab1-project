@@ -10,4 +10,4 @@
 
 ## Автор
 
-riyacursedova, Артем
+riyacursedova, Артем.
