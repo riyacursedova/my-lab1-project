@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <link rel="stylesheet" href="styles/style2.css">
+</head>
+<body>
+    <!-- Фіксоване меню -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#registration">Реєстрація</a></li>
+                <li><a href="#login">Вхід</a></li>
+                <li><a href="#feedback">Зворотній зв'язок</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Загальна інформація -->
+        <section class="general-info" id="home">
+            <h1>КОНТАКТИ</h1>
+            <p>Надається можливість користувачу заповнити форму реєстрації, яку в подальшому можна використовувати для входу, або зробити відпис зворотнього зв'язку без подальшої участі на форумі.</p>
+        </section>
+
+        <!-- Float елементи -->
+        <section class="float-container">
+            <div class="float-item">
+                <h3>Форма реєстрації</h3>
+            </div>
+            <div class="float-item">
+                <h3>Форма входу</h3>
+            </div>
+            <div class="float-item">
+                <h3>Форма зворотнього зв'язку</h3>
+            </div>
+        </section>
+
+        <!-- Форма реєстрації -->
+        <section class="form-container" id="registration">
+            <h2>Форма реєстрації</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="first-name">Ім'я</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Прізвище</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label>Стать</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Чоловік</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Жінка</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="age">Вік</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Дата народження</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+                <div class="form-group">
+                    <label for="country">Країна проживання</label>
+                    <select id="country" name="country">
+                        <option value="">Оберіть країну проживання</option>
+                        <option value="ua">Україна</option>
+                        <option value="pl">Польща</option>
+                        <option value="de">Німеччина</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефону</label>
+                    <input type="tel" id="phone" name="phone" pattern="\+380[0-9]{9}" placeholder="+380000000000">
+                </div>
+                <div class="form-group">
+                    <label for="social">Соцмережа</label>
+                    <input type="url" id="social" name="social" placeholder="Посилання на соц.мережу">
+                </div>
+                <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" placeholder="Ел. пошта" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" placeholder="Пароль" required>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Чи згодні Ви з умовами?</label>
+                </div>
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </section>
+
+        <!-- Форма входу -->
+        <section class="form-container" id="login">
+            <h2>Форма входу</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-username">Логін</label>
+                    <input type="text" id="login-username" name="login-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                </div>
+                <button type="submit">Увійти</button>
+            </form>
+        </section>
+
+        <!-- Форма зворотнього зв'язку -->
+        <section class="form-container" id="feedback">
+            <h2>Форма зворотнього зв'язку</h2>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="feedback-name">Ім'я</label>
+                    <input type="text" id="feedback-name" name="feedback-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedback-email">Ел. пошта</label>
+                    <input type="email" id="feedback-email" name="feedback-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedback-message">Повідомлення</label>
+                    <textarea id="feedback-message" name="feedback-message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+
+        <!-- Посилання на соцмережі -->
+        <div class="social-links">
+            <h3>Посилання на соц.мережі</h3>
+            <div class="social-icons">
+                <a href="https://instagram.com" title="Instagram">📷</a>
+                <a href="https://discord.com" title="Discord">💬</a>
+                <a href="https://twitter.com" title="Twitter">🐦</a>
+                <a href="https://t.me" title="Telegram">✈️</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <p>Лабораторна робота №1.</p>
+    </footer>
+</body>
+</html>

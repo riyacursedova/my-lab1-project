@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+h1 { 
+    color: #2c3e50; 
+    text-align: center; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+h2 { 
+    color: #34495e; 
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.centered-text {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+.player-info {
+    background-color: #e8f4f8;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+.awards-table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+.awards-table th, .awards-table td {
+    border: 1px solid #bdc3c7;
+    padding: 12px;
+    text-align: center;
+}
+.awards-table th {
+    background-color: white;
+    color: #2c3e50;
+    font-weight: bold;
+}
+.total-row {
+    background-color: #f8f9fa !important;
+    color: #2c3e50;
+    font-weight: bold;
+}
+hr {
+    border: none;
+    border-top: 2px solid #7f8c8d;
+    margin: 30px 0;
+}
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+/* Фото через flexbox */
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.photo-gallery img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+/* Навігаційне меню */
+.navigation-menu {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.navigation-menu a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.navigation-menu a:hover {
+    background-color: #3498db;
+    color: white;
+}
